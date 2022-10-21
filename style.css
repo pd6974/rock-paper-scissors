@@ -1,3 +1,51 @@
+body {
+    background-image: url(office.jpg);
+    background-size: cover;
+}
+
+.prompt {
+    display: flex;
+    margin: 18px;
+    padding: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: 750;
+}
+
+p {
+    margin: 12px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rock {
+    background-image: url(rockimg.jpg);
+    background-size: 350px 350px;
+    width: 350px;
+    height: 350px;
+}
+
+.paper {
+    background-image: url(paperimg.jpg);
+    background-size: 350px 350px;
+    width: 350px;
+    height: 350px;
+}
+
+.scissors {
+    background-image: url(scissorsimg.jpg);
+    background-size: 350px 350px;
+    width: 350px;
+    height: 350px;
+}
+
+
 .results {
     white-space: pre-wrap;
 }
+

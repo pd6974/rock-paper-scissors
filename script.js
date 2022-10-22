@@ -83,7 +83,7 @@ function playRound(playerSelection) {
 
 function winner(result) {
     if (result === 0) {
-            div.textContent = "It's a tie! Please choose again.\nPlayer Score:" + playerScore + " Computer Score: " + computerScore;
+            div.textContent = "It's a tie! Please choose again.\nPlayer Score: " + playerScore + " Computer Score: " + computerScore;
     } else if (result === 1) {
         playerScore++;
             if (playerScore <= 4) {

@@ -28,13 +28,26 @@ p {
     background-size: 350px 350px;
     width: 350px;
     height: 350px;
+    border-radius: 8px;
+    border-width: 0;
 }
+
+.rock:hover {
+    opacity: .65;
+}
+
 
 .paper {
     background-image: url(paperimg.jpg);
     background-size: 350px 350px;
     width: 350px;
     height: 350px;
+    border-radius: 8px;
+    border-width: 0;
+}
+
+.paper:hover {
+    opacity: .65;
 }
 
 .scissors {
@@ -42,10 +55,46 @@ p {
     background-size: 350px 350px;
     width: 350px;
     height: 350px;
+    border-radius: 8px;
+    border-width: 0;
+}
+
+.scissors:hover {
+    opacity: .65;
 }
 
 
 .results {
+    display: flex;
+    margin: 18px;
+    padding: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: 750;
     white-space: pre-wrap;
 }
 
+.buttondiv {
+    display: flex;
+    justify-content: center;
+
+}
+
+.restart {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: rgba(169, 218, 238, 0.1);
+    border-radius: 8px;
+    border-color: black;
+    border-width: 2px;
+    margin: 12px;
+    padding: 12px 24px;
+    visibility: hidden;
+}
+
+.restart:hover {
+    background-color: white;
+}

@@ -23,7 +23,7 @@ p {
     justify-content: space-around;
 }
 
-.rock {
+button.rock {
     background-image: url(rockimg.jpg);
     background-size: 350px 350px;
     width: 350px;
@@ -38,6 +38,15 @@ p {
 
 
 .paper {
+    display: flex;
+    font-size: large;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+button.paper {
     background-image: url(paperimg.jpg);
     background-size: 350px 350px;
     width: 350px;
@@ -50,7 +59,7 @@ p {
     opacity: .65;
 }
 
-.scissors {
+button.scissors {
     background-image: url(scissorsimg.jpg);
     background-size: 350px 350px;
     width: 350px;
@@ -98,3 +107,4 @@ p {
 .restart:hover {
     background-color: white;
 }
+

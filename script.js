@@ -18,6 +18,13 @@ const paperBtn = document.querySelector('.paper');
 const sciBtn = document.querySelector('.scissors');
 const restart = document.querySelector('.restart');
 
+//Variables to show computer choice
+const rockDiv = document.querySelector('div.rock');
+const paperDiv = document.querySelector('div.paper');
+const scissorsDiv = document.querySelector('div.scissors');
+
+
+
 //chose to make different event listeners because I couldn't figure out how to loop through all
 rockBtn.addEventListener('click', () => {
         playerSelection = Rock;
@@ -44,14 +51,19 @@ restart.addEventListener('click', () => {
 
 
 
+//For some reason the changes I've made to the css for paper div and button removes the button from the page when the computer selects it
+
 function getComputerChoice() {
     let x = Math.floor(Math.random() * 100) + 1;
 
     if (x <= 33) {
+        rockDiv.textContent += "Computer Choice";
         return Rock;
     } else if (x > 33 && x <= 66) {
+        paperDiv.textContent += "Computer Choice";
         return Paper;
     } else {
+        scissorsDiv.textContent += "Computer Choice";
         return Scissors;
     }
 }
@@ -65,7 +77,6 @@ function playRound(playerSelection) {
 
 } else {
     computerSelection = getComputerChoice();
-    console.log(playerSelection);
     playerSelection = playerSelection.toLowerCase();
 
     if (playerSelection === computerSelection) return 0

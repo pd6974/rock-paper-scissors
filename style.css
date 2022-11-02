@@ -37,7 +37,7 @@ button.rock {
 }
 
 
-.paper {
+.paper, .rock, .scissors {
     display: flex;
     font-size: large;
     align-items: center;
@@ -108,3 +108,7 @@ button.scissors {
     background-color: white;
 }
 
+.rockdiv, .paperdiv, .scissorsdiv {
+    font-size: 0px;
+    font-weight: 500;
+}

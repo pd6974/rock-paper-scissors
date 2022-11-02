@@ -19,9 +19,9 @@ const sciBtn = document.querySelector('.scissors');
 const restart = document.querySelector('.restart');
 
 //Variables to show computer choice
-const rockDiv = document.querySelector('div.rock');
-const paperDiv = document.querySelector('div.paper');
-const scissorsDiv = document.querySelector('div.scissors');
+const rockDiv = document.querySelector('rodckdiv');
+const paperDiv = document.querySelector('paperdiv');
+const scissorsDiv = document.querySelector('scissorsdiv');
 
 
 
@@ -52,18 +52,24 @@ restart.addEventListener('click', () => {
 
 
 //For some reason the changes I've made to the css for paper div and button removes the button from the page when the computer selects it
+//Change this functtion so it toggles a hidden property in css to visible to show the computer choice
 
 function getComputerChoice() {
+    document.getElementById('rockdiv').style.fontSize = "0px";
+    document.getElementById('paperdiv').style.fontSize = "0px";
+    document.getElementById('scissorsdiv').style.fontSize = "0px";
+
+
     let x = Math.floor(Math.random() * 100) + 1;
 
     if (x <= 33) {
-        rockDiv.textContent += "Computer Choice";
+        document.getElementById('rockdiv').style.fontSize = "24px";
         return Rock;
     } else if (x > 33 && x <= 66) {
-        paperDiv.textContent += "Computer Choice";
+        document.getElementById('paperdiv').style.fontSize = "24px";
         return Paper;
     } else {
-        scissorsDiv.textContent += "Computer Choice";
+        document.getElementById('scissorsdiv').style.fontSize = "24px";
         return Scissors;
     }
 }
